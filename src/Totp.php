@@ -45,7 +45,7 @@ class Totp {
         $this->secretKey = $secretKey;
 
         // Default epoch: Unix epoch
-        $epochTime = '1970-01-01 00:00:00';
+        $epochTime = '1970-01-01 00:00:00 GMT-00:00';
 
         // Handling assigning configuration options to object
         if (is_array($options)) {
